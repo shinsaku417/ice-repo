@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B77F1B2D17B978D7009739AE"
-               BuildableName = "ice.app"
+               BuildableName = "Save The ICE.app"
                BlueprintName = "Save The ICE"
                ReferencedContainer = "container:Save The ICE.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B77F1B2D17B978D7009739AE"
-            BuildableName = "ice.app"
+            BuildableName = "Save The ICE.app"
             BlueprintName = "Save The ICE"
             ReferencedContainer = "container:Save The ICE.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B77F1B2D17B978D7009739AE"
-            BuildableName = "ice.app"
+            BuildableName = "Save The ICE.app"
             BlueprintName = "Save The ICE"
             ReferencedContainer = "container:Save The ICE.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B77F1B2D17B978D7009739AE"
-            BuildableName = "ice.app"
+            BuildableName = "Save The ICE.app"
             BlueprintName = "Save The ICE"
             ReferencedContainer = "container:Save The ICE.xcodeproj">
          </BuildableReference>

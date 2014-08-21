@@ -38,6 +38,7 @@
 		B77F1B4217B978D7009739AE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B4117B978D7009739AE /* CoreText.framework */; };
 		F13CCDAB19A664C100B7C501 /* GamePlay.m in Sources */ = {isa = PBXBuildFile; fileRef = F13CCDAA19A664C100B7C501 /* GamePlay.m */; };
 		F1B078B119A678ED001A0A29 /* Recap.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B078B019A678ED001A0A29 /* Recap.m */; };
+		F1B2576919A693EB00C28930 /* Tutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B2576819A693EB00C28930 /* Tutorial.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,8 @@
 		F13CCDAA19A664C100B7C501 /* GamePlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePlay.m; sourceTree = "<group>"; };
 		F1B078AF19A678ED001A0A29 /* Recap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recap.h; sourceTree = "<group>"; };
 		F1B078B019A678ED001A0A29 /* Recap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recap.m; sourceTree = "<group>"; };
+		F1B2576719A693EB00C28930 /* Tutorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tutorial.h; sourceTree = "<group>"; };
+		F1B2576819A693EB00C28930 /* Tutorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tutorial.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,8 @@
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
+				F1B2576719A693EB00C28930 /* Tutorial.h */,
+				F1B2576819A693EB00C28930 /* Tutorial.m */,
 				F13CCDA919A664C100B7C501 /* GamePlay.h */,
 				F13CCDAA19A664C100B7C501 /* GamePlay.m */,
 				F1B078AF19A678ED001A0A29 /* Recap.h */,
@@ -355,6 +360,7 @@
 				F13CCDAB19A664C100B7C501 /* GamePlay.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				F1B2576919A693EB00C28930 /* Tutorial.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

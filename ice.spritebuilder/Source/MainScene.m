@@ -11,9 +11,16 @@
 @implementation MainScene
 
 - (void)play {
-    CCScene *gameplayScene = [CCBReader loadAsScene:@"GamePlay"];
-    CCTransition *transition = [CCTransition transitionFadeWithDuration:0.8f];
-    [[CCDirector sharedDirector] presentScene:gameplayScene withTransition:transition];
+    NSUserDefaults *gameState = [NSUserDefaults standardUserDefaults];
+    if ([gameState boolForKey:@"tutorial"]) {
+        CCScene *gameplayScene = [CCBReader loadAsScene:@"GamePlay"];
+        CCTransition *transition = [CCTransition transitionFadeWithDuration:0.8f];
+        [[CCDirector sharedDirector] presentScene:gameplayScene withTransition:transition];
+    } else {
+        CCScene *gameplayScene = [CCBReader loadAsScene:@"Tutorial"];
+        CCTransition *transition = [CCTransition transitionFadeWithDuration:0.8f];
+        [[CCDirector sharedDirector] presentScene:gameplayScene withTransition:transition];
+    }
 }
 
 @end
