@@ -31,7 +31,19 @@
 - (void)onEnter {
     [super onEnter];
     
-    [self schedule:@selector(spawnIce) interval:3.f];
+    NSUserDefaults *gameState = [NSUserDefaults standardUserDefaults];
+    [gameState setBool:false forKey:@"moveten"];
+    [gameState setBool:false forKey:@"movehundred"];
+    [gameState setBool:false forKey:@"movethousand"];
+    [gameState setBool:false forKey:@"movetenthousand"];
+    
+    [gameState setBool:false forKey:@"scheduleFive"];
+    [gameState setBool:false forKey:@"scheduleTen"];
+    [gameState setBool:false forKey:@"scheduleThirty"];
+    [gameState setBool:false forKey:@"scheduleFifty"];
+    [gameState setBool:false forKey:@"scheduleHundred"];
+    
+    [self schedule:@selector(spawnIce) interval:2.f];
 }
 
 - (void)spawnIce {
@@ -59,11 +71,11 @@
     float touchX = touchLocation.x / self.contentSizeInPoints.width;
     if (touchX < _bar.position.x) {
         if (_bar.position.x > 0.25) {
-            _bar.position = ccp(_bar.position.x - 0.05, _bar.position.y);
+            _bar.position = ccp(_bar.position.x - 0.1, _bar.position.y);
         }
     } else {
         if (_bar.position.x < 0.75) {
-            _bar.position = ccp(_bar.position.x + 0.05, _bar.position.y);
+            _bar.position = ccp(_bar.position.x + 0.1, _bar.position.y);
         }
     }
 }
@@ -108,23 +120,23 @@
     
     if (_score == 5 && ![gameState boolForKey:@"scheduleFive"]) {
         [self unschedule:@selector(spawnIce)];
-        [self schedule:@selector(spawnIce) interval:2.5f];
+        [self schedule:@selector(spawnIce) interval:1.5f];
         [gameState setBool:true forKey:@"scheduleFive"];
     } else if (_score == 10 && ![gameState boolForKey:@"scheduleTen"]) {
         [self unschedule:@selector(spawnIce)];
-        [self schedule:@selector(spawnIce) interval:2.f];
+        [self schedule:@selector(spawnIce) interval:1.25f];
         [gameState setBool:true forKey:@"scheduleTen"];
     } else if (_score == 30 && ![gameState boolForKey:@"scheduleThirty"]) {
         [self unschedule:@selector(spawnIce)];
-        [self schedule:@selector(spawnIce) interval:1.5f];
+        [self schedule:@selector(spawnIce) interval:1.f];
         [gameState setBool:true forKey:@"scheduleThirty"];
     } else if (_score == 50 && ![gameState boolForKey:@"scheduleFifty"]) {
         [self unschedule:@selector(spawnIce)];
-        [self schedule:@selector(spawnIce) interval:1.25f];
+        [self schedule:@selector(spawnIce) interval:0.9f];
         [gameState setBool:true forKey:@"scheduleFifty"];
     } else if (_score == 100 && ![gameState boolForKey:@"scheduleHundred"]) {
         [self unschedule:@selector(spawnIce)];
-        [self schedule:@selector(spawnIce) interval:1.f];
+        [self schedule:@selector(spawnIce) interval:0.775f];
         [gameState setBool:true forKey:@"scheduleHundred"];
     }
 }
